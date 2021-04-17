@@ -9,7 +9,7 @@ public class DemoController {
 
     @GetMapping("/")
     public String hello() {
-        return String.format("Welcome");
+        return String.format("Welcome to docker container");
     }
 
     @GetMapping("/hello")
