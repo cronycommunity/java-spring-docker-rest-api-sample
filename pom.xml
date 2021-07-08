@@ -16,6 +16,19 @@
 	<properties>
 		<java.version>1.8</java.version>
 	</properties>
+	
+	<distributionManagement>
+    		<snapshotRepository>
+      			<id>Demo-Framework-Snapshot</id>
+      			<url>http://vmvg:8081/repository/Demo-Framework-Snapshot/</url>
+    		</snapshotRepository>
+    
+    		<repository>
+      			<id>Demo-Framework-Release</id>
+      			<url>http://vmvg:8081/repository/Demo-Framework-Release/</url>
+    		</repository>
+	</distributionManagement>
+	
 	<dependencies>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
