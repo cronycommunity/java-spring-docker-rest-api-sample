@@ -20,18 +20,18 @@
 	<repositories>
 		<repository>
 			<id>Demo-Framework-Group</id>
-			<url>http://vmvg:8081/repository/Demo-Framework-Group/</url>
+			<url>http://localhost:8081/repository/Demo-Framework-Group/</url>
 		</repository>
 	</repositories>
 
 	<distributionManagement>
 		<snapshotRepository>
 			<id>Demo-Framework-Snapshot</id>
-			<url>http://vmvg:8081/repository/Demo-Framework-Snapshot/</url>
+			<url>http://localhost:8081/repository/Demo-Framework-Snapshot/</url>
 		</snapshotRepository>
 		<repository>
 			<id>Demo-Framework-Release</id>
-			<url>http://vmvg:8081/repository/Demo-Framework-Release/</url>
+			<url>http://localhost:8081/repository/Demo-Framework-Release/</url>
 		</repository>
 	</distributionManagement>
 	
