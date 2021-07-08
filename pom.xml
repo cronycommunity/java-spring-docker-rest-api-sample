@@ -16,17 +16,23 @@
 	<properties>
 		<java.version>1.8</java.version>
 	</properties>
-	
+
+	<repositories>
+		<repository>
+			<id>Demo-Framework-Group</id>
+			<url>http://vmvg:8081/repository/Demo-Framework-Group/</url>
+		</repository>
+	</repositories>
+
 	<distributionManagement>
-    		<snapshotRepository>
-      			<id>Demo-Framework-Snapshot</id>
-      			<url>http://vmvg:8081/repository/Demo-Framework-Snapshot/</url>
-    		</snapshotRepository>
-    
-    		<repository>
-      			<id>Demo-Framework-Release</id>
-      			<url>http://vmvg:8081/repository/Demo-Framework-Release/</url>
-    		</repository>
+		<snapshotRepository>
+			<id>Demo-Framework-Snapshot</id>
+			<url>http://vmvg:8081/repository/Demo-Framework-Snapshot/</url>
+		</snapshotRepository>
+		<repository>
+			<id>Demo-Framework-Release</id>
+			<url>http://vmvg:8081/repository/Demo-Framework-Release/</url>
+		</repository>
 	</distributionManagement>
 	
 	<dependencies>
@@ -44,6 +50,11 @@
 
 	<build>
 		<plugins>
+			<plugin>
+				<artifactId>maven-clean-plugin</artifactId>
+				<version>3.1.0</version>
+			</plugin>
+
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
